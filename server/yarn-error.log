@@ -1,0 +1,63 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\zohai\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\usr\bin;C:\Program Files\ConEmu\ConEmu\Scripts;C:\Program Files\ConEmu;C:\Program Files\ConEmu\ConEmu;C:\Users\zohai\Downloads\curl-7.73.0_3-win64-mingw\curl-7.73.0_3-win64-mingw\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\Program Files\PostgreSQL\13\bin;C:\Users\zohai\AppData\Local\Microsoft\WindowsApps;C:\Users\zohai\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\zohai\AppData\Local\Yarn\bin;C:\Users\zohai\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\zohai\stripe\server\package.json: Unexpected token } in JSON at position 708
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+      "name": "postgres",
+      "version": "1.0.0",
+      "description": "",
+      "main": "app.js",
+      "jest": {
+          "testEnvironment": "node",
+          "preset": "@shelf/jest-mongodb"
+      },
+      "scripts": {
+          "test": "jest --detectOpenHandles --watchAll --verbose",
+          "start": "node app.js",
+          "dev": "nodemon app.js"
+      },
+      "author": "",
+      "license": "ISC",
+      "dependencies": {
+          "bcryptjs": "^2.4.3",
+          "body-parser": "^1.19.0",
+          "compression": "^1.7.4",
+          "express": "^4.17.1",
+          "express-session": "^1.17.1",
+          "http-proxy-middleware": "^1.0.6",
+          "jest": "^26.6.0",
+          "jsonwebtoken": "^8.5.1",
+          "nodemon": "^2.0.6",
+      },
+      "devDependencies": {
+          "@shelf/jest-mongodb": "^1.2.3",
+          "cors": "^2.8.5",
+          "graphql": "^15.3.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

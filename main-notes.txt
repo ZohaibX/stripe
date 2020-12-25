@@ -1,0 +1,20 @@
+First of all, go to the stripe.com dashboard and on the developers section
+grab the secret and publisher key 
+secret key will be used on server and publisher key will be used on client side 
+
+on server -- app.js 
+we just have  special route in here with some data, which could be changed 
+
+on client -- App.js
+we have a StripeCheckout component and one funtion -- makePayment -- attached to it
+and we will send all the data through that function
+
+Testing
+when clicking on the payment button
+add email there
+and on payment section -- write 4242 4242 4242 4242
+and 12/21 123 for other details     
+and then submit and test should pass
+
+
+Website -- https://stripe.com/docs/api
